@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+.heading{
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+.todoInput{
+  width: 900px;
+  margin-left: 23%;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.items{
+  list-style: none;
+  font-size: 35px;
+  font-family: "Arial", sans-serif;
+  margin-left: 312px;
+  margin-bottom: 10px;
+  width: 905px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+}
