@@ -57,14 +57,26 @@ function App() {
 
               {item.content}
 
-              <button onClick={(e) =>{
-                let filteredTodo = todo.filter(i => i.id !== Number(item.id));
 
-                setTodo(filteredTodo)
+              <div className='wrap-btns'>
 
-                window.localStorage.setItem("todos", JSON.stringify(filteredTodo))
+                {/* <button onClick={(e) =>{
+                  
+                }}
+                >edit</button> */}
 
-              }}>x</button>
+
+
+                <button onClick={(e) =>{
+                  let filteredTodo = todo.filter(i => i.id !== Number(item.id));
+
+                  setTodo(filteredTodo)
+
+                  window.localStorage.setItem("todos", JSON.stringify(filteredTodo))
+
+                }}>x</button>
+              </div>
+
             </li>
           )
         })

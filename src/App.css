@@ -61,3 +61,7 @@
   border: 1px solid black;
   border-radius: 10px;
 }
+.wrap-btns{
+  display: flex;
+  align-items: center;
+}
