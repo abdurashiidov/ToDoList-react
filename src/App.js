@@ -39,6 +39,8 @@ function App() {
               style={{textDecoration: item.isCompleted ? "line-through" : "none"}}
             key={item.id}>
 
+
+              {/* //! CHECKBOX COMPLETED */}
               <input 
               defaultChecked={item.isCompleted}
               
@@ -60,13 +62,25 @@ function App() {
 
               <div className='wrap-btns'>
 
+
+                {/* //! EDIT BUTTON */}
                 <button onClick={(e) =>{
-                  
+                  let newValue = prompt("ToDo ni o'zgartiring", item.content)
+
+                  setTodo((item) =>{
+                    return item.map((el) =>{
+                      if (el.id == item.id) {
+                        el.content = newValue
+                      }
+                      return el
+                    })
+                  })
                 }}
+
                 >Edit</button>
 
 
-
+                {/* //! DELETE BUTTON */}
                 <button onClick={(e) =>{
                   let filteredTodo = todo.filter(i => i.id !== Number(item.id));
 
