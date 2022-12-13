@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [todo, setTodo] = useState(JSON.parse(window.localStorage.getItem("todos")) ||  [])
+  const [todo, setTodo] = useState(JSON.parse(window.localStorage.getItem("todos")) || [])
   return (
     <>
 
@@ -60,10 +60,10 @@ function App() {
 
               <div className='wrap-btns'>
 
-                {/* <button onClick={(e) =>{
+                <button onClick={(e) =>{
                   
                 }}
-                >edit</button> */}
+                >edit</button>
 
 
 
@@ -74,7 +74,7 @@ function App() {
 
                   window.localStorage.setItem("todos", JSON.stringify(filteredTodo))
 
-                }}>x</button>
+                }}>Delete</button>
               </div>
 
             </li>
