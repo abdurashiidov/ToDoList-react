@@ -63,7 +63,7 @@ function App() {
                 <button onClick={(e) =>{
                   
                 }}
-                >edit</button>
+                >Edit</button>
 
 
 
