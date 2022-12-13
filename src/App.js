@@ -69,7 +69,7 @@ function App() {
 
                   setTodo((item) =>{
                     return item.map((el) =>{
-                      if (el.id == item.id) {
+                      if (el.id === item.id) {
                         el.content = newValue
                       }
                       return el
