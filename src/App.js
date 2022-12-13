@@ -75,7 +75,9 @@ function App() {
                       return el
                     })
                   })
+                  window.localStorage.setItem("todos", JSON.stringify(newValue))
                 }}
+
 
                 >Edit</button>
 
